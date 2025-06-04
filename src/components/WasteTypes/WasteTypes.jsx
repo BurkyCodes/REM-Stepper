@@ -22,7 +22,7 @@ const WasteTypes = () => {
         </ul>
      <div className='btns'>
             <button className='btn back'>Back</button>
-            <button className='btn next'>Next</button>
+            <button className='btn next'>Continue</button>
         </div>
     </div>
   )

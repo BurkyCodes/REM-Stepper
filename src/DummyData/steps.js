@@ -2,6 +2,7 @@ import { FaShield } from "react-icons/fa6";
 import { CiCalendarDate,CiLocationOn } from "react-icons/ci";
 import { MdOutlinePayment } from "react-icons/md";
 import { FaTruck,FaTrash } from "react-icons/fa";
+import { Component } from "react";
 
 export const steps = [
     {id:1,name:"Postcode",icon:"fa-solid fa-location-dot"},
