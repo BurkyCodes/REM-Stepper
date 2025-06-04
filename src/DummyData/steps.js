@@ -4,11 +4,11 @@ import { MdOutlinePayment } from "react-icons/md";
 import { FaTruck,FaTrash } from "react-icons/fa";
 
 export const steps = [
-    {id:1,name:"Postcode",icon:CiLocationOn},
-    {id:2,name:"WasteType",icon:FaTrash},
-    {id:3,name:"Select Skip",icon:FaTruck},
-    {id:4,name:"Permit Check",icon:FaShield},
-    {id:5,name:"Choose Date",icon:CiCalendarDate},
-    {id:6,name:"Payment",icon:MdOutlinePayment},
+    {id:1,name:"Postcode",icon:"fa-solid fa-location-dot"},
+    {id:2,name:"WasteType",icon:"fa-solid fa-trash"},
+    {id:3,name:"Select Skip",icon:"fa-solid fa-truck"},
+    {id:4,name:"Permit Check",icon:"fa-solid fa-shield"},
+    {id:5,name:"Choose Date",icon:"fa-solid fa-calendar"},
+    {id:6,name:"Payment",icon:"fa-solid fa-credit-card"},
 ]
 
