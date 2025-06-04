@@ -2,6 +2,7 @@ import React from 'react'
 import { steps } from '../DummyData/steps'
 
 const Progress = ({step}) => {
+  console.log(step)
   const STEP_HEIGHT = 140;
   const containerOffset = (steps.length / 2 - step + 0.5) * STEP_HEIGHT; 
   return (
@@ -18,12 +19,12 @@ const Progress = ({step}) => {
            <li 
            className='progress'
            ></li>
-        {steps.map((step,index) => 
+        {steps.map((s,index) => 
         (   
             <li 
               className={`step ${index + 1 === step ? 'active' : ''}`}
              key={index}>
-                  <i className={step.icon} />
+                  <i className={s.icon} />
             </li>
         ))}
         </ul>

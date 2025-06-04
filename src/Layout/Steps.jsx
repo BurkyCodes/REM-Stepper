@@ -3,14 +3,14 @@ import Progress from '../components/Progress'
 import Content from '../components/Content'
 
 const Steps = () => {
-  const [step,setSteps] = useState(1);
+  const [step,setStep] = useState(1);
 
   function handlePrev(){
-    if(step > 1) setSteps((step) => step-1);
+    if(step > 1) setStep((step) => step-1);
   }
 
    function handleNext(){
-    if(step < 6) setSteps((step) => step+1);
+    if(step < 6) setStep((step) => step+1);
   }
   
 
@@ -21,7 +21,7 @@ const Steps = () => {
     <Progress step={step} />
       </div>
       <div className='content-div'>
-    <Content setStep={setSteps} step={step}  />
+    <Content setStep={setStep} step={step}  />
       </div>
     </div>
     </>
