@@ -88,8 +88,6 @@ p{
     transition: all 0.s ease-in;
 }
 
-
-
 .step{
     background-color: #7F8CAA;
     height: 30px;
@@ -446,4 +444,108 @@ p{
     border-radius: 5px;
     width: min-content;
     color: #000000;
+}
+
+.waste-type-drawer{
+    position: absolute;
+    background-color: #333446;
+    border-radius: 10px;
+    padding: 10px 20px;
+    height: 100%;
+}
+
+.waste-type-drawer ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    margin-top: 20px;
+}
+.waste-type-drawer ul li{
+    background-color: #7F8CAA;
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 10px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.waste-type-drawer ul li:hover{
+    cursor: pointer;
+}
+
+.waste-type-drawer ul li.selected{
+    /* border: 2px solid #FE7743; */
+    background-color: #FE7743;
+}
+
+.waste-type-drawer ul li:last-child{
+    border: 2px solid #B8CFCE;
+    background-color: transparent;
+}
+.notice-container{
+    position: absolute;
+    background-color: #333446;
+    border-radius: 10px;
+    padding: 10px 20px;
+    height: 100%;
+   
+}
+.notice-container .notice-info{
+    background-color:#7F8CAA ;
+    border-radius: 10px;
+    padding: 10px;
+    
+
+}
+.notice-info .notice-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    
+}
+.notice-info .notice-top i{
+      color: #FE7743;
+      background-color: #000000;
+      padding: 20px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+}
+.notice-info .notice-top h2{
+    font-size: 17px;
+    background-color: #000000;
+    margin-left: -10px;
+    border-radius: 5px;
+    color: #fff;
+    padding: 0 10px;
+}
+.notice-info  p{
+    font-size: 14px;
+    color: #000000;
+}
+.percentage{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+.percent-card{
+    border: 2px solid #EFEEEA;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #B8CFCE;
+}
+.platerboard-container{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #333446;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
 }

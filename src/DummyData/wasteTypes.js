@@ -24,3 +24,12 @@ export const wasteTypesArray = [
         icon:"fa-solid fa-building"
     }
 ]
+export const wastesData = [
+  {index:1,title:'Soil'},
+  {index:2,title:'Concrete'},
+  {index:3,title:'Bricks'},
+  {index:4,title:'Tiles'},
+  {index:5,title:'Sand'},
+  {index:6,title:'Gravel'},
+  {index:7,title:'Rubble'},
+]
