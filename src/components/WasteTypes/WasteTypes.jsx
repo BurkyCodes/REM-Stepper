@@ -35,6 +35,14 @@ const handleSelect = (waste) => {
                 />
             ))}
         </ul>
+        <div className="selected-waste-types">
+            <ul>
+                {selectedWasteTypes.map((item,index) => (
+                 <li key={index}>{item.title} {selectedWasteTypes.length === 2 && (<span>and</span>)} </li>
+              
+                ))}         
+            </ul>
+        </div>
      <div className='btns'>
             <button className='btn back'>Back</button>
             <button className='btn next'>Continue</button>

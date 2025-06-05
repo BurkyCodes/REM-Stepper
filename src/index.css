@@ -161,7 +161,7 @@ p{
     align-items: center;
     gap: 10px;
     /* background-color: #7F8CAA; */
-    background-color: #FE7743;
+    background-color: #B8CFCE;
     opacity: 50%;
     width: 80%;
     justify-content: center;
@@ -226,4 +226,13 @@ p{
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+.selected-waste-types{
+    color: #7F8CAA;
+}
+.selected-waste-types ul{
+    display: flex;
+    font-size: 14px;
+    gap: 3px;
 }
