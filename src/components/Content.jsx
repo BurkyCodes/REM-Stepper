@@ -2,6 +2,7 @@ import React from 'react'
 import WasteTypesContainer from './WasteTypes/WasteTypesContainer'
 import SkipSizeContainer from './SkipSize/SkipSizeContainer'
 import PermtCheckContainer from './PermitCheck/PermtCheckContainer';
+import DeliveryDateContainer from './DeliveryDate/DeliveryDateContainer';
 
 const Content = ({step,setStep,handleNext,handlePrev}) => {
 
@@ -12,7 +13,9 @@ const Content = ({step,setStep,handleNext,handlePrev}) => {
       return <SkipSizeContainer handleNext={handleNext} handlePrev={handlePrev} /> 
     case 3:
       return <PermtCheckContainer handleNext={handleNext} handlePrev={handlePrev} /> 
-    default:
+    case 4:
+      return <DeliveryDateContainer handleNext={handleNext} handlePrev={handlePrev} />
+      default:
       return null;
   }
 
