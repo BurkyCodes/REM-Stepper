@@ -1,6 +1,6 @@
 import React from 'react'
 
-const WasteType = ({onSelect,waste,selected}) => {
+const WasteType = ({onSelect,waste,selected,open,onMoreClick}) => {
 
   return (
     <div 
@@ -10,7 +10,18 @@ const WasteType = ({onSelect,waste,selected}) => {
         <i className={waste.icon}></i>
         <h3>{waste.title}</h3>
         </div>
-        <button className='more'>more</button>
+        <button className='more' onClick={(e) => {
+        e.stopPropagation(); 
+        onMoreClick();
+      }}>
+        {open ? 'less' : 'more'}
+      </button>
+
+      {open && (
+        <p className="description">
+          {waste.description}
+        </p>
+      )}
     </div>
   )
 }

@@ -5,7 +5,7 @@ import { wasteTypesArray } from "../../DummyData/wasteTypes";
 import WasteType from "./WasteType";
 
 const WasteTypes = () => {
- const [openmore,setOpenMore] = useState(false);
+ const [openWasteIndex,setOpenWasteIndex] = useState(null);
  const [selectedWasteTypes,setSelectedWasteTypes] = useState([]);
  console.log(selectedWasteTypes)
 
@@ -20,6 +20,10 @@ const handleSelect = (waste) => {
   });
 };
 
+const handleMoreClick = (index) => {
+  setOpenWasteIndex(prev => prev === index ? null : index);
+}
+
 
   return (
     <div className="waste-types-container">
@@ -29,8 +33,10 @@ const handleSelect = (waste) => {
             {wasteTypesArray.map((waste,index) => (
                 <WasteType 
                 key={index}
+                onMoreClick={() => handleMoreClick(waste.index)}
                 waste={waste} 
                 onSelect={handleSelect}
+                open={openWasteIndex === waste.index}
                 selected={selectedWasteTypes.some(item => item.index === waste.index)} 
                 />
             ))}
