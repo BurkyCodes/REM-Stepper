@@ -2,22 +2,18 @@ import React from 'react'
 import WasteTypes from './WasteTypes/WasteTypes'
 import SkipSizeContainer from './SkipSize/SkipSizeContainer'
 
-const Content = ({step,setStep}) => {
+const Content = ({step,setStep,handleNext,handlePrev}) => {
 
-  if(step == 1){
-   return (
-    <div className='content'>
-        <WasteTypes />   
-    </div>
-  )
+    switch (step) {
+    case 1:
+      return <WasteTypes handleNext={handleNext} handlePrev={handlePrev} />;
+    case 2:
+      return <SkipSizeContainer handleNext={handleNext} handlePrev={handlePrev} /> 
+    
+    default:
+      return null;
   }
-  else if(step == 2){
-   return (
-    <div className='content'>
-        <SkipSizeContainer />
-    </div>
-  )
-  }
+
  
 }
 

@@ -4,7 +4,7 @@ import { FaInfoCircle } from "react-icons/fa";
 import { wasteTypesArray } from "../../DummyData/wasteTypes";
 import WasteType from "./WasteType";
 
-const WasteTypes = () => {
+const WasteTypes = ({ handleNext, handlePrev}) => {
  const [openWasteIndex,setOpenWasteIndex] = useState(null);
  const [selectedWasteTypes,setSelectedWasteTypes] = useState([]);
  console.log(selectedWasteTypes)
@@ -23,6 +23,8 @@ const handleSelect = (waste) => {
 const handleMoreClick = (index) => {
   setOpenWasteIndex(prev => prev === index ? null : index);
 }
+
+// console.log("wastetypes")
 
 
   return (
@@ -51,7 +53,7 @@ const handleMoreClick = (index) => {
         </div>
      <div className='btns'>
             <button className='btn back'>Back</button>
-            <button className='btn next'>Continue</button>
+            <button className='btn next' onClick={handleNext}>Continue</button>
         </div>
     </div>
   )

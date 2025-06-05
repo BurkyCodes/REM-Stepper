@@ -5,6 +5,7 @@ export const skipsizedata = [
         description:"14 day hire period",
         price:"$211",
         yards:"4 Yards",
+        picture:"4-yarder-skip.jpg"
     },
       {
         index:2,
@@ -12,6 +13,7 @@ export const skipsizedata = [
         description:"14 day hire period",
         price:"$241",
         yards:"5 Yards",
+        picture:"5-yarder-skip.jpg"
     },
       {
         index:3,
@@ -19,6 +21,7 @@ export const skipsizedata = [
         description:"14 day hire period",
         price:"$264",
         yards:"6 Yards",
+        picture:"5-yarder-skip.jpg"
     },
     {
         index:4,
@@ -26,6 +29,7 @@ export const skipsizedata = [
         description:"14 day hire period",
         price:"$295",
         yards:"8 Yards",
+        picture:"5-yarder-skip.jpg"
     },
       {
         index:5,
@@ -33,6 +37,7 @@ export const skipsizedata = [
         description:"14 day hire period",
         price:"$356",
         yards:"10 Yards",
+        picture:"5-yarder-skip.jpg"
     },
       {
         index:6,
@@ -40,6 +45,7 @@ export const skipsizedata = [
         description:"14 day hire period",
         price:"$390",
         yards:"12 Yards",
+        picture:"5-yarder-skip.jpg"
     },
     {
         index:7,
@@ -47,6 +53,7 @@ export const skipsizedata = [
         description:"14 day hire period",
         price:"$434",
         yards:"14 Yards",
+        picture:"5-yarder-skip.jpg"
     },
       {
         index:8,
@@ -54,6 +61,7 @@ export const skipsizedata = [
         description:"14 day hire period",
         price:"$510",
         yards:"16 Yards",
+        picture:"5-yarder-skip.jpg"
     },
        {
         index:9,
@@ -61,6 +69,7 @@ export const skipsizedata = [
         description:"14 day hire period",
         price:"$802",
         yards:"20 Yards",
+        picture:"5-yarder-skip.jpg"
     },
       {
         index:10,
@@ -68,5 +77,6 @@ export const skipsizedata = [
         description:"14 day hire period",
         price:"$877",
         yards:"40 Yards",
+        picture:"5-yarder-skip.jpg"
     }
 ]
