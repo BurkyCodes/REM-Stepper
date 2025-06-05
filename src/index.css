@@ -17,7 +17,7 @@ body{
     background-color: #000000;
     font-family: "Poppins", sans-serif;
     overflow-x:hidden ;
-
+    height: calc(var(--vh) * 90);
 }
 h1{
     font-size: 25px;
