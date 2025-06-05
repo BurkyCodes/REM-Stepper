@@ -3,6 +3,7 @@ import WasteTypesContainer from './WasteTypes/WasteTypesContainer'
 import SkipSizeContainer from './SkipSize/SkipSizeContainer'
 import PermtCheckContainer from './PermitCheck/PermtCheckContainer';
 import DeliveryDateContainer from './DeliveryDate/DeliveryDateContainer';
+import PaymentContainer from './Payment/PaymentContainer';
 
 const Content = ({step,setStep,handleNext,handlePrev}) => {
 
@@ -15,6 +16,8 @@ const Content = ({step,setStep,handleNext,handlePrev}) => {
       return <PermtCheckContainer handleNext={handleNext} handlePrev={handlePrev} /> 
     case 4:
       return <DeliveryDateContainer handleNext={handleNext} handlePrev={handlePrev} />
+     case 5:
+      return <PaymentContainer handleNext={handleNext} handlePrev={handlePrev} />
       default:
       return null;
   }

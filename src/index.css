@@ -17,7 +17,7 @@ p{
 }
 
 body{
-    min-height: 100vh;
+    min-height: 100dvh;
     display: flex;
     /* justify-content: start;
     align-items: center; */
@@ -405,4 +405,41 @@ p{
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+.deliverydate-wrapper, .collectiondate-wrapper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-top: 20px;
+}
+.deliverydate-wrapper .top, .collectiondate-wrapper .top{
+    width:100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.collectiondate-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.collectiondate-wrapper p{
+    text-align: start;
+}
+.change-btn{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #FE7743;
+}
+.delivery-date{
+    color: #fff;
+}
+
+.delivery-date input{
+    background-color: #fff;
+    border-radius: 5px;
+    width: min-content;
+    color: #000000;
+
 }
