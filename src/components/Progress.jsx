@@ -1,10 +1,11 @@
 import React from 'react'
 import { steps } from '../DummyData/steps'
 
-const Progress = ({step}) => {
+const Progress = ({step,totalSteps}) => {
 
   const STEP_HEIGHT = 140;
   const containerOffset = (steps.length / 2 - step + 0.5) * STEP_HEIGHT; 
+  const progress = ((step - 1)/ (totalSteps - 1) * 100)
   return (
     <div className=''>
         {/* <ul className='progress_container'>
@@ -19,10 +20,17 @@ const Progress = ({step}) => {
            <li 
            className='progress'
            ></li>
+                <li 
+           className='progress'
+           style={{
+            backgroundColor:"#FE7743",
+            height:`${progress}%`
+           }}
+           ></li>
         {steps.map((s,index) => 
         (   
             <li 
-              className={`step ${index + 1 === step ? 'active' : ''}`}
+             className={`step ${index + 1 === step ? 'active' : ''} ${index + 1 < step ? 'passed' : ''}`}
              key={index}>
                   <i className={s.icon} />
             </li>

@@ -4,6 +4,7 @@ import Content from '../components/Content'
 
 const Steps = () => {
   const [step,setStep] = useState(1);
+  const totalSteps = 5;
   
  
   
@@ -20,7 +21,7 @@ const Steps = () => {
     <>
     <div className='layout-container'>
       <div className='progress-div'>
-    <Progress step={step} />
+    <Progress totalSteps={totalSteps} step={step} />
       </div>
       <div className='content-div'>
     <Content setStep={setStep} step={step} handleNext={handleNext} handlePrev={handlePrev}  />

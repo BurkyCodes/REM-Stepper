@@ -77,7 +77,7 @@ p{
 
 .progress{
     background-color:#7F8CAA;
-    opacity: 40%;
+    /* opacity: 40%; */
     position: absolute;
     width: 4px;
     height: 100%;
@@ -85,7 +85,6 @@ p{
     top: 0;
     z-index: 1;
     transform:translateX(-50%);
-    
     transition: all 0.s ease-in;
 }
 
@@ -104,10 +103,16 @@ p{
 .step.active{
     border-color: #B8CFCE;
     color: #fff;
-    /* color: #333446; */
-    /* background-color: #FFFDF6; */
+    
     background-color: #FE7743;
 }
+.step.passed{
+     border-color: #B8CFCE;
+    color: #fff;
+ 
+    background-color: #FE7743; 
+}
+
 .btns{
     display: flex;
     justify-content: space-evenly;
@@ -441,5 +446,4 @@ p{
     border-radius: 5px;
     width: min-content;
     color: #000000;
-
 }
