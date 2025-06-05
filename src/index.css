@@ -300,6 +300,7 @@ p{
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+    border-bottom: 2px solid #EFEEEA;
     /* background: rgba(0, 0, 0, 0.9); 
     backdrop-filter: blur(10px);
    -webkit-backdrop-filter: blur(10px); 
