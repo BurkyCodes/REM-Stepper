@@ -11,6 +11,9 @@ const SkipSize = ({skip,onSelect,isSelected}) => {
         </div>  
         <span className="yards">{skip.size} Yards</span>
          <h3 className="price">£{skip.price_before_vat}</h3>
+         {skip.allowed_on_road === false && (<span className="not-allowed">
+          <i class="fa-solid fa-triangle-exclamation"></i> Not Allowed on The Road
+         </span>)}
         <div className="image-holder">
           <img src={skip.picture} alt="" />
         </div>

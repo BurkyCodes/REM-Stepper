@@ -5,8 +5,14 @@ import SkipSize from './SkipSize'
 
 const SkipSizeContainer = ({handleNext,handlePrev}) => {
    const [selectedSkip, setSelectedSkip] = useState(null);
+
+  const selectedSkipData = selectedSkip !== null ? skipsizedata[selectedSkip] : null;
+
    
   const handleSkipSelect = (index) => {
+    if(selectedSkip === index){
+      setSelectedSkip(null)
+    }
     setSelectedSkip(index);
   };
   
@@ -26,10 +32,19 @@ const SkipSizeContainer = ({handleNext,handlePrev}) => {
           ))}
         
         </ul>
+        {selectedSkipData && (
+      <div className='sticky-text'>
+         <p className=''> {selectedSkipData.size} Yard Skip</p>
+         <p>£{selectedSkipData.price_before_vat}</p>
         <div className='btns'>
             <button className='btn back' onClick={handlePrev}>Back</button>
             <button className='btn next' onClick={handleNext}>Continue</button>
         </div>
+        </div>
+
+        )}
+       
+        
     </div>
   )
 }
