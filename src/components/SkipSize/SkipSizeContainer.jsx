@@ -1,11 +1,14 @@
-import React from 'react'
+import React,{useState} from 'react'
 import { skipsizedata } from '../../DummyData/skipSize'
 import SkipSize from './SkipSize'
 
 
 const SkipSizeContainer = ({handleNext,handlePrev}) => {
+   const [selectedSkip, setSelectedSkip] = useState(null);
    
-
+  const handleSkipSelect = (index) => {
+    setSelectedSkip(index);
+  };
   
   return (
     <div className='skip-sizecontainer'>
@@ -15,7 +18,11 @@ const SkipSizeContainer = ({handleNext,handlePrev}) => {
         </div>
         <ul className='skip-container'>
           {skipsizedata.map((skip,index) => (
-          <SkipSize key={index} skip={skip} />
+          <SkipSize 
+           key={index} skip={skip}
+           isSelected={selectedSkip === index}
+           onSelect={() => handleSkipSelect(index)}
+           />
           ))}
         
         </ul>

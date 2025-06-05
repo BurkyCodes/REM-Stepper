@@ -1,10 +1,11 @@
 
 
-const SkipSize = ({skip}) => {
+const SkipSize = ({skip,onSelect,isSelected}) => {
   return (
-    <div className="skip-card">
+    <div 
+    className={`skip-card ${isSelected ? 'selected' : ''}`}>
       <div className="skip-detail">
-        <h1>{skip.size} Yard Skip</h1>
+        <h1  className={`${isSelected ? 'selected' : ''}`}>{skip.size} Yard Skip</h1>
         <p>{skip.hire_period_days} day hire period</p>
        
         </div>  
@@ -13,7 +14,10 @@ const SkipSize = ({skip}) => {
         <div className="image-holder">
           <img src={skip.picture} alt="" />
         </div>
-        <button className="select-skip">Select Skip</button>
+        <button 
+        onClick={onSelect}
+        className={`select-skip ${isSelected ? 'selected' : ''}`}
+       >{isSelected ? 'Selected' : 'Select Skip'}</button>
     </div>
   )
 }

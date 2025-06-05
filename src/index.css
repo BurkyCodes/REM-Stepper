@@ -300,8 +300,14 @@ p{
     position: relative;
     overflow: hidden;
 }
+.skip-card.selected{
+    border: 2px solid #FE7743;
+}
 .skip-card h1{
     color: #FFF;
+}
+.skip-card h1.selected{
+    color: #FE7743;
 }
 .skip-card .skip-detail p{
     color: #333446;
@@ -355,6 +361,10 @@ p{
     border-bottom-left-radius: 20px;
     padding: 10px;
     border-radius: 10px;
+    cursor: pointer;
+}
+.select-skip.selected{
+    background-color: #FE7743;
 }
 .permit-check-card{
     background-color: #333446;
