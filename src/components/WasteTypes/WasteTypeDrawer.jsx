@@ -43,7 +43,6 @@ const WasteTypeDrawer = ({handlePrev,handleDecision}) => {
                     {waste.title}
                 </li>
             ))}
-            <li>I don't Have Any</li>
         </ul>
          <div className='btns'>
             <button className='btn back' onClick={handlePrev}>Back</button>
