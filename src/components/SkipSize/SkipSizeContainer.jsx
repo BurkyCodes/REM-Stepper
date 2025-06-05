@@ -3,7 +3,7 @@ import { skipsizedata } from '../../DummyData/skipSize'
 import SkipSize from './SkipSize'
 
 
-const SkipSizeContainer = () => {
+const SkipSizeContainer = ({handleNext,handlePrev}) => {
   return (
     <div className='skip-sizecontainer'>
       <div>
@@ -16,6 +16,10 @@ const SkipSizeContainer = () => {
           ))}
         
         </ul>
+        <div className='btns'>
+            <button className='btn back' onClick={handlePrev}>Back</button>
+            <button className='btn next' onClick={handleNext}>Continue</button>
+        </div>
     </div>
   )
 }

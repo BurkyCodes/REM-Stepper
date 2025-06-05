@@ -144,7 +144,7 @@ p{
 }
 .content-div{
     width: 90%;
-    height: 100vh;
+    /* height: 100v; */
     display: flex;
     align-items: start;   
     justify-content:center ;
@@ -276,6 +276,7 @@ p{
 
 .skip-sizecontainer{
     width: 100%;
+    margin-bottom: 20px;
 }
 
 .skip-container{
@@ -323,4 +324,19 @@ p{
     margin: 5px;
     padding: 10px;
     border-radius: 10px;
+}
+.permit-check-card{
+    background-color: #333446;
+    min-width: 300px;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+.permit-ul{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
 }

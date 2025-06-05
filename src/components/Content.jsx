@@ -1,15 +1,17 @@
 import React from 'react'
-import WasteTypes from './WasteTypes/WasteTypes'
+import WasteTypesContainer from './WasteTypes/WasteTypesContainer'
 import SkipSizeContainer from './SkipSize/SkipSizeContainer'
+import PermtCheckContainer from './PermitCheck/PermtCheckContainer';
 
 const Content = ({step,setStep,handleNext,handlePrev}) => {
 
     switch (step) {
     case 1:
-      return <WasteTypes handleNext={handleNext} handlePrev={handlePrev} />;
+      return <WasteTypesContainer handleNext={handleNext} handlePrev={handlePrev} />;
     case 2:
       return <SkipSizeContainer handleNext={handleNext} handlePrev={handlePrev} /> 
-    
+    case 3:
+      return <PermtCheckContainer handleNext={handleNext} handlePrev={handlePrev} /> 
     default:
       return null;
   }

@@ -4,7 +4,7 @@ import { FaInfoCircle } from "react-icons/fa";
 import { wasteTypesArray } from "../../DummyData/wasteTypes";
 import WasteType from "./WasteType";
 
-const WasteTypes = ({ handleNext, handlePrev}) => {
+const WasteTypesContainer = ({ handleNext, handlePrev}) => {
  const [openWasteIndex,setOpenWasteIndex] = useState(null);
  const [selectedWasteTypes,setSelectedWasteTypes] = useState([]);
  console.log(selectedWasteTypes)
@@ -59,4 +59,4 @@ const handleMoreClick = (index) => {
   )
 }
 
-export default WasteTypes
+export default WasteTypesContainer
