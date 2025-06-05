@@ -4,6 +4,9 @@ import SkipSize from './SkipSize'
 
 
 const SkipSizeContainer = ({handleNext,handlePrev}) => {
+   
+
+  
   return (
     <div className='skip-sizecontainer'>
       <div>

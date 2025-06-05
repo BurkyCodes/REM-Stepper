@@ -1,18 +1,14 @@
 /* eslint-disable no-unused-vars */
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { FaInfoCircle } from "react-icons/fa";
 import { wasteTypesArray } from "../../DummyData/wasteTypes";
 import WasteType from "./WasteTypeCard";
-import WasteTypeDrawer from "./WasteTypeDrawer";
-import Notice from "./Notice";
-import PlasterBoard from "./PlasterBoard";
+
 
 const WasteTypesContainer = ({ handleNext, handlePrev}) => {
  const [openWasteIndex,setOpenWasteIndex] = useState(null);
  const [selectedWasteTypes,setSelectedWasteTypes] = useState([]);
- const [showDrawer, setShowDrawer] = useState(false);
- const [showNotice,setShowNotice] = useState(false);
- const [showPlasterBoard, setShowPlasterBoard] = useState(false);
+ 
 
 const handleSelect = (waste) => {
   setSelectedWasteTypes((prev) => {
@@ -25,18 +21,6 @@ const handleSelect = (waste) => {
   });
 };
 
-const handleNextClick = () => {
-  if (!showDrawer){
-    setShowDrawer(true);
-    return
-  }
-  handleNext();
-}
-
-const handleDrawerClose = () => {
-  setShowDrawer(false);
-  setShowNotice(true)
-}
 
 const handleMoreClick = (index) => {
   setOpenWasteIndex(prev => prev === index ? null : index);
@@ -73,26 +57,12 @@ const handleMoreClick = (index) => {
         {selectedWasteTypes.length > 0 && (
             <div className='btns'>
             <button className='btn back'>Back</button>
-            <button className='btn next' onClick={handleNextClick}>Continue</button>
+            <button className='btn next' onClick={handleNext}>Continue</button>
         </div>
         )}
    
-      {showDrawer && (
-        <WasteTypeDrawer
-        handlePrev={() => setShowDrawer(false)}
-        handleDecision={(selected) => {
-            setShowDrawer(false);
-            if (selected.length > 0) {
-              setShowNotice(true);
-            } else {
-              setShowPlasterBoard(true);
-            }
-          }}
-         />
-      )}
-      {showNotice && (<Notice />)}
-      
-    {showPlasterBoard && ( <PlasterBoard />)}
+    
+    
     </div>
     </>
   )
