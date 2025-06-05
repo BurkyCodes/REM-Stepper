@@ -1,8 +1,11 @@
 import React from 'react'
 
-const WasteType = ({waste}) => {
+const WasteType = ({onSelect,waste,selected}) => {
+
   return (
-    <div className='waste'>
+    <div 
+       onClick={() => onSelect(waste)} 
+       className={`waste ${selected ? 'selected' : ''}`}>
         <div className='top'>
         <i className={waste.icon}></i>
         <h3>{waste.title}</h3>
