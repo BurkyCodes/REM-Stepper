@@ -13,6 +13,7 @@ h1{
 
 p{
   color: #B8CFCE;
+  letter-spacing: 1px;
 }
 
 body{
@@ -84,6 +85,7 @@ p{
     top: 0;
     z-index: 1;
     transform:translateX(-50%);
+    
     transition: all 0.s ease-in;
 }
 
@@ -130,9 +132,10 @@ p{
 }
 .progress-div{
   width: 10%;
-  position: fixed;         /* Fixed to viewport */
-  top: 50%;                /* Center vertically */
-  left: 0;                 /* Align left */
+  position: fixed;         
+  top: 50%;           
+  left: 0;   
+  margin-left: 5px;              
   transform: translateY(-50%);
   display: flex;
   align-items: center;
@@ -331,7 +334,55 @@ p{
     border-radius: 10px;
     padding: 10px;
     display: flex;
-    align-items: center;
+    align-items: start;
+    flex-direction: column;
+    width: 400px;
+    border:2px solid #B8CFCE;
+}
+.permit-check-card:hover{
+    cursor: pointer;
+}
+
+.permit-check-card.selected{
+    border: 2px solid #FE7743;
+
+}
+
+.permit-check-card .top{
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    width: 80%;
+    gap: 20px;
+}
+.permit-check-card .top .left{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: start;
+}
+.permit-check-card .top i{
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #B8CFCE;
+}
+.h1-card{
+    min-width: 300px;
+    width: 350px;
+    border-radius: 10px;
+    padding: 5px;
+    border:2px solid #B8CFCE;
+    background-color: #333446;
+}
+.h1-card.selected{
+    border:2px solid #FE7743;
+    color: #FE7743;
+}
+.permit-check-card .top i.selected{
+    padding: 10px;
+    border-radius: 50%;
+    background-color:#FE7743 ;
+  
 }
 .permit-ul{
     display: flex;
@@ -339,4 +390,19 @@ p{
     flex-direction: column;
     width: 100%;
     gap: 15px;
+    margin-top: 40px;
+}
+.permit-desc{
+    display: flex;
+    margin-top: 8px;
+    color: #fff;
+    font-size: 14px;
+    align-items: start;
+    text-align: start;
+}
+.sub-title.selected{
+    color: #FE7743;
+}
+.permit-desc.selected{
+     
 }

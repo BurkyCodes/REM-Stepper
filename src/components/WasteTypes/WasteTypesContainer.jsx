@@ -7,7 +7,6 @@ import WasteType from "./WasteType";
 const WasteTypesContainer = ({ handleNext, handlePrev}) => {
  const [openWasteIndex,setOpenWasteIndex] = useState(null);
  const [selectedWasteTypes,setSelectedWasteTypes] = useState([]);
- console.log(selectedWasteTypes)
 
 const handleSelect = (waste) => {
   setSelectedWasteTypes((prev) => {

@@ -2,7 +2,7 @@ import React from 'react'
 import { steps } from '../DummyData/steps'
 
 const Progress = ({step}) => {
-  console.log(step)
+
   const STEP_HEIGHT = 140;
   const containerOffset = (steps.length / 2 - step + 0.5) * STEP_HEIGHT; 
   return (
