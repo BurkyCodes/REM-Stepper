@@ -1,12 +1,32 @@
-# React + Vite
+# React + Vite Waste Disposal Stepper Project
+A responsive design that allows users to select types of waste for disposal guiding them through a multi-step process using a dynamic progress bar and interactive components
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Technologies 
+- React.js
+- Vite
+- React Icons/ font awesome icons
 
-Currently, two official plugins are available:
+## Project Features
+- Responsive design
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Project Approach and Design
+- A stateful `Progress` component tracks step progress and animates accordingly.
+- Waste type cards are generated from a reusable data array and support toggling detailed info.
+- Selection state is managed using React’s `useState` to allow multi-select functionality.
+- Selection summary logic limits display to two items, then appends "and X more" for readability.
+- Reusable components (`WasteTypeCard`, etc.) promote clean structure and easier maintenance.
+- A `SkipSize` component to allow selction of skips.
+- A `Permit selector` component to allow selection of permits whether Private or public.
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+git clone https://github.com/BurkyCodes/REM-Stepper.git
+cd stepper
+npm install
+npm start
+
+## Folder Structure
+
+- `components/` – Reusable UI components
+- `DummyData/` – Sample data (e.g. waste types)
+
