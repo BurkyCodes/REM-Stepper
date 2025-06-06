@@ -1,9 +1,12 @@
 import React from 'react'
 
-const PaymentContainer = () => {
+const PaymentContainer = ({handlePrev}) => {
   return (
-    <div>
+    <div className='payement-container'>
         <h1>Payment</h1>
+        <button className='btns'>
+          <button onClick={handlePrev} className='back-btn'>back</button>
+        </button>
     </div>
   )
 }

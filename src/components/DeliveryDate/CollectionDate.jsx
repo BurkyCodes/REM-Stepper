@@ -1,7 +1,11 @@
 
 const CollectionDate = () => {
   return (
-    <div>CollectionDate</div>
+     <div className="delivery-date">
+        <input
+         type="date" 
+         />
+    </div>
   )
 }
 

@@ -17,7 +17,7 @@ const Content = ({step,setStep,handleNext,handlePrev}) => {
     case 4:
       return <DeliveryDateContainer handleNext={handleNext} handlePrev={handlePrev} />
      case 5:
-      return <PaymentContainer handleNext={handleNext} handlePrev={handlePrev} />
+      return <PaymentContainer  handlePrev={handlePrev} />
       default:
       return null;
   }

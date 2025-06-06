@@ -19,7 +19,7 @@ const DeliveryDateContainer = ({handleNext,handlePrev}) => {
 
             <DeliveryDate />
         </div>
-        <div className="collectiondate-wrapper">
+        <div className="deliverydate-wrapper">
             <div className="top">
             <h1>Collection Date</h1>
             {/* <button className="change-btn">
@@ -28,8 +28,8 @@ const DeliveryDateContainer = ({handleNext,handlePrev}) => {
             </button> */}
             </div>
             <CollectionDate />
-            <p >Please select a collection date at least one day after delivery date</p>
         </div>
+            <p className="collection-date-info">Please select a collection date at least one day after delivery date</p>
         <div className='btns'>
             <button className='btn back' onClick={handlePrev}>Back</button>
             <button className='btn next' onClick={handleNext}>Continue to Payment</button>
