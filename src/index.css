@@ -188,7 +188,7 @@ p{
     /* color: #fff; */
     color: #000000;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
     /* background-color: #7F8CAA; */
     background-color: #B8CFCE;
     opacity: 50%;
@@ -570,10 +570,13 @@ z-index: 999;
     width: max-content;
     border-top-right-radius: 20px;    
 }
+.small-text{
+    font-size: 12px;
+}
 
 
 @media(min-width:1000px){
-.progress-div{
+/* .progress-div{
   height: 60px;
   position: fixed;         
   top: 0;           
@@ -585,7 +588,7 @@ z-index: 999;
   justify-content: center;
   overflow-y: hidden;
   z-index: 10;
-  width: 100vw;
+  width: 100%;
     }
   .progress_container{
     flex-direction: row;
@@ -602,7 +605,7 @@ z-index: 999;
     content: '';
     position: absolute;
     opacity: 40%;
-    /* height: 40%; */
+   
     background-color: #7F8CAA;
     height: 4px; 
     width: 100%; 
@@ -621,8 +624,9 @@ z-index: 999;
     z-index: 2;
     transform: translateY(-50%);
     transition: all 0.3s ease-in;
-}
+} */
 
+   
 
     .content-div{
         margin-top: 40px;
@@ -641,4 +645,15 @@ z-index: 999;
         align-items: start;
         gap: 60px;
     }
+     .waste-wrapper{
+     display: grid;
+     grid-template-columns: repeat(2,1fr);   
+    }
+    .waste-types-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+ 
 }

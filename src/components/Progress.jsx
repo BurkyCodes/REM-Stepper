@@ -2,6 +2,7 @@ import React from 'react'
 import { steps } from '../DummyData/steps'
 
 const Progress = ({step,totalSteps}) => {
+  
 
   const STEP_HEIGHT = 140;
   const containerOffset = (steps.length / 2 - step + 0.5) * STEP_HEIGHT; 
@@ -16,13 +17,14 @@ const Progress = ({step,totalSteps}) => {
         </ul> */}
         <ul 
         className='progress_container'
-         style={{ transform: `translateY(${containerOffset}px)` }}>
+         style={{ transform: `translateY(${containerOffset}px)` }}
+         >
            <li 
            className='progress'
            ></li>
                 <li 
            className='progress'
-           style={{
+            style={{
             backgroundColor:"#FE7743",
             height:`${progress}%`
            }}
