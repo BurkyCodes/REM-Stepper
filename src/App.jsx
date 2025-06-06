@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import './App.css'
-import Steps from './Layout/Steps'
+import Layout from './Layout/Layout'
 
 function App() {
  useEffect(() => {
@@ -20,7 +20,7 @@ function App() {
 
   return (
     <>
-     <Steps />
+     <Layout />
     </>
   )
 }

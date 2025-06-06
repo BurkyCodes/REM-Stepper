@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Progress from '../components/Progress'
 import Content from '../components/Content'
 
-const Steps = () => {
+const Layout = () => {
   const [step,setStep] = useState(1);
   const totalSteps = 5;
   
@@ -31,4 +31,4 @@ const Steps = () => {
   )
 }
 
-export default Steps
+export default Layout
