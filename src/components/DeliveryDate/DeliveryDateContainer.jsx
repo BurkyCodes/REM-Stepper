@@ -1,9 +1,8 @@
-import { useState } from "react"
+
 import DeliveryDate from "./DeliveryDate"
 import CollectionDate from "./CollectionDate"
 
 const DeliveryDateContainer = ({handleNext,handlePrev}) => {
-    const [openDate,setOpenDate] = useState(null)
   return (
     <div className="delivery-date-container"> 
         <h1>Choose Your Delivery Date</h1>

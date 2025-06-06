@@ -47,12 +47,20 @@ const handleMoreClick = (index) => {
             ))}
         </ul>
         <div className="selected-waste-types">
-            <ul>
-                {selectedWasteTypes.map((item,index) => (
-                 <li key={index}>{item.title} {selectedWasteTypes.length === 2 && (<span>and</span>)} </li>
-              
-                ))}         
-            </ul>
+           <ul>
+           {selectedWasteTypes.slice(0, 2).map((item, index) => (
+             <li key={index}>
+               {item.title}
+               {index === 0 && selectedWasteTypes.length === 2 && ' and '}
+               {index === 0 && selectedWasteTypes.length > 2 && ', '}
+             </li>
+           ))}
+           {selectedWasteTypes.length > 2 && (
+             <li>
+               and {selectedWasteTypes.length - 2} more
+             </li>
+           )}
+         </ul>
         </div>
         {selectedWasteTypes.length > 0 && (
             <div className='btns'>
