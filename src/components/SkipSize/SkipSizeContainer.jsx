@@ -20,7 +20,7 @@ const SkipSizeContainer = ({handleNext,handlePrev}) => {
     <div className='skip-sizecontainer'>
       <div>
         <h1>Choose Your Skip Size</h1>
-        <p>Select the skip size that bestssuits your needs</p>
+        <p>Select the skip size that bests suits your needs</p>
         </div>
         <ul className='skip-container'>
           {skipsizedata.map((skip,index) => (
@@ -35,7 +35,7 @@ const SkipSizeContainer = ({handleNext,handlePrev}) => {
         {selectedSkipData && (
       <div className='sticky-text'>
          <p className=''> {selectedSkipData.size} Yard Skip</p>
-         <p>£{selectedSkipData.price_before_vat}</p>
+         <p className='sticky-price'>£{selectedSkipData.price_before_vat}</p>
         <div className='btns'>
             <button className='btn back' onClick={handlePrev}>Back</button>
             <button className='btn next' onClick={handleNext}>Continue</button>
